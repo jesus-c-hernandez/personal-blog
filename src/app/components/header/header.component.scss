@@ -1,0 +1,63 @@
+.header {
+  height: 600px;
+  background-image: url("../../../assets/cover-img/cover-image01.png");
+}
+
+.nav-align {
+  justify-content: end;
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.img-height {
+  height: 300px;
+}
+
+@media (max-width: 920px) {
+  .header {
+    height: 900px;
+  }
+  .content-header {
+    flex-direction: column-reverse;
+  }
+  .h-r-920-c {
+    margin-top: 60px;
+  }
+  .align-r-920 {
+    display: flex;
+    justify-content: center;
+  }
+  .max-w-r-920-img {
+    max-width: 100%;
+  }
+  .max-w-r-920-desc {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    padding: 0px 100px;
+  }
+}
+
+@media (max-width: 720px) {
+  .header {
+    height: 980px;
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    height: 1020px;
+  }
+}
+
+@media (max-width: 580px) {
+  .header {
+    height: 1080px;
+  }
+}
+
