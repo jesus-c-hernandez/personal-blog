@@ -1,0 +1,97 @@
+$color-1: #dfece6;
+$color-2: #92c7a3;
+$color-3: #3ca2a2;
+$color-4: #215a6d;
+$color-5: #2d2d29;
+
+// ==== Cards ====
+
+.card {
+  position: relative;
+  max-width: 500px;
+  min-height: 360px;
+  padding-bottom: 6px;
+  background-color: #f4f6f6;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.card-title {
+  display: block;
+  text-align: center;
+  padding: 2%;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.card-img {
+  width: 100%;
+  height: 98%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+}
+
+.card-desc {
+  display: block;
+  font-size: 1.2rem;
+  position: absolute;
+  height: 0;
+  top: 0;
+  opacity: 0;
+  padding: 2% 6%;
+  background-color: #f4f6f6;
+  overflow-y: hidden;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.card:hover .card-desc {
+  opacity: 1;
+  height: 88%;
+}
+
+.img-tech {
+  max-width: 30px;
+  transition: transform 150ms, box-shadow 150ms;
+}
+
+.img-tech:hover{
+  transform: translateY(-2px);
+}
+
+// ==== / Cards ====
+
+.btn-gen-item-proj {
+  width: 120px;
+  height: 34px;
+  background-color: $color-5;
+  border: 1px solid $color-5;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: transform 150ms, box-shadow 150ms;
+  touch-action: manipulation;
+}
+
+.btn-repo {
+  background-color: $color-5;
+  border: 1px solid $color-5;
+}
+
+.btn-gen-item-proj:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+.btn-colab {
+  background-color: $color-3;
+  border: 1px solid $color-3;
+}
+
+
+.img-icon {
+  width: 20px;
+  filter: invert(1);
+}
+
