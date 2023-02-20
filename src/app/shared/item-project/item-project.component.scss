@@ -4,11 +4,17 @@ $color-3: #3ca2a2;
 $color-4: #215a6d;
 $color-5: #2d2d29;
 
+#item-project {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 40px;
+}
+
 // ==== Cards ====
 
 .card {
   position: relative;
-  max-width: 500px;
+  max-width: 420px;
   min-height: 360px;
   padding-bottom: 6px;
   background-color: #f4f6f6;
@@ -52,11 +58,11 @@ $color-5: #2d2d29;
 
 .img-tech {
   max-width: 30px;
-  transition: transform 150ms, box-shadow 150ms;
+  transition: 0.3s;
 }
 
 .img-tech:hover{
-  transform: translateY(-2px);
+  scale: 1.2;
 }
 
 // ==== / Cards ====

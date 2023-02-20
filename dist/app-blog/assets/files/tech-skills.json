@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Angular",
+    "img": "../../../assets/technologies/angular.png"
+  },
+  {
+    "name": "Node js",
+    "img": "../../../assets/technologies/node-js.png"
+  },
+  {
+    "name": "Vue",
+    "img": "../../../assets/technologies/vue.png"
+  },
+  {
+    "name": "Figma",
+    "img": "../../../assets/technologies/figma.png"
+  },
+  {
+    "name": "Docker",
+    "img": "../../../assets/technologies/docker.png"
+  },
+  {
+    "name": "Git",
+    "img": "../../../assets/technologies/git.png"
+  },
+  {
+    "name": "Postgresql",
+    "img": "../../../assets/technologies/postgresql.png"
+  },
+  {
+    "name": "Linux",
+    "img": "../../../assets/technologies/linux.png"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "name": "React js",
+    "img": "../../../assets/technologies/react.png"
+  },
+  {
+    "name": "Spring",
+    "img": "../../../assets/technologies/spring.png"
+  }
+]

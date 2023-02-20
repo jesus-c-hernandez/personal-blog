@@ -1,32 +1,19 @@
 <div id="item-project">
-  <div class="card">
-    <h4 class="card-title gray-900 m-0">PokeShopee</h4>
+  <div class="card" *ngFor="let project of projects$ | async; index as i">
+    <h4 class="card-title gray-900 m-0">{{project.name}}</h4>
     <img class="card-img" src="../../../assets/projects/PokeShopee.jpg" alt="">
     <div class="card-desc">
-      <p>Tienda de pokemon's. Cuenta con filtros por nombre y tipo, apartado de descripcion
-        del producto, carrito de compras e incluye cuentas de usuario.</p>
+      <p>{{project.description}}</p>
       <div>
         <h5 class="subtitle1">
           Tecnologias:
         </h5>
         <div class="jc-sb">
-          <div class="jc-c flex-column al-i-ce">
+          <div class="jc-c flex-column al-i-ce" *ngFor="let technology of project.technologies" >
             <h6 class="body1">
-              Vue
+              {{ technology.name }}
             </h6>
-            <img class="img-tech" src="../../../assets/technologies/vue.png" alt="">
-          </div>
-          <div class="jc-c flex-column al-i-ce">
-            <h6 class="body1">
-              Node js
-            </h6>
-            <img class="img-tech" src="../../../assets/technologies/node-js.png" alt="">
-          </div>
-          <div class="jc-c flex-column al-i-ce">
-            <h6 class="body1">
-              Mongo DB
-            </h6>
-            <img class="img-tech" src="../../../assets/technologies/mongo.png" alt="">
+            <img class="img-tech" src="{{technology.img}}" alt="">
           </div>
         </div>
       </div>
@@ -35,38 +22,20 @@
           Colaboradores:
         </h5>
         <div class="jc-sb">
-          <div class="">
-            <!-- <a class="navf" [routerLink]="'https://github.com/j-daniel-cruz-b']" fragment="ayudaDiv" target="_blank"> -->
+          <div class="" *ngFor="let colaborator of project.colaborators">
               <button class="btn-gen-item-proj btn-colab jc-around al-i-ce">
-                <h6 class="m-auto body2 gray-100" (click)="openNewWindow('https://github.com/j-daniel-cruz-b')">
-                  Daniel Cruz
+                <h6 class="m-auto body2 gray-100" (click)="openNewWindow(colaborator.profile)">
+                  {{ colaborator.name }}
                 </h6>
                 <img class="img-icon" src="../../../assets/icons/user.png" alt="">
               </button>
-            <!-- </a> -->
-          </div>
-          <div class="">
-            <button class="btn-gen-item-proj btn-colab jc-around al-i-ce">
-              <h6 class="m-auto body2 gray-100">
-                Carolina Medina
-              </h6>
-              <img class="img-icon" src="../../../assets/icons/user.png" alt="">
-            </button>
-          </div>
-          <div class="">
-            <button class="btn-gen-item-proj btn-colab jc-around al-i-ce">
-              <h6 class="m-auto body2 gray-100">
-                Jesús Hdez
-              </h6>
-              <img class="img-icon" src="../../../assets/icons/user.png" alt="">
-            </button>
           </div>
         </div>
       </div>
     </div>
     <div class="jc-sb mt-20">
       <div>
-        <button class="btn-gen-item-proj btn-repo jc-around al-i-ce">
+        <button class="btn-gen-item-proj btn-repo jc-around al-i-ce" (click)="openNewWindow(project.repoProject)">
           <h6 class="m-auto body2 gray-100">
             Repositorio
           </h6>
@@ -74,11 +43,11 @@
         </button>
       </div>
       <div>
-        <button class="btn-gen-item-proj btn-repo jc-around al-i-ce">
+        <button class="btn-gen-item-proj btn-repo jc-around al-i-ce" (click)="openNewWindow(project.project)">
           <h6 class="m-auto body2 gray-100">
             Visitar
           </h6>
-          <img class="img-icon" src="../../../assets/icons/play.png" alt="">
+          <img class="img-icon" src="../../../assets/icons/application.png" alt="">
         </button>
       </div>
     </div>

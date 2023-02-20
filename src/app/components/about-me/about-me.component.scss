@@ -1,0 +1,28 @@
+#about-me {
+  height: auto;
+  background-image: url("../../../assets/cover-img/cover-image01.png");
+  padding: 15px 100px;
+}
+
+.content-tech-skill {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+  align-self: center;
+  justify-items: center;
+  margin: 20px 240px;
+}
+
+.content-learn-tech-skill {
+  margin: 20px 380px;
+}
+
+.img-tech-skill {
+  width: 80px;
+  transition: 0.3s;
+  touch-action: manipulation;
+}
+
+.img-tech-skill:hover {
+  scale: 1.1;
+}

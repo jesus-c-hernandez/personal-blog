@@ -1,0 +1,19 @@
+#contact {
+  height: auto;
+  background-image: url("../../../assets/cover-img/c02-co-img-02.png");
+  padding: 15px 100px;
+}
+
+.img-contact {
+  max-width: 50px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.img-contact:hover{
+  scale: 1.2;
+}
+
+.img-contact-copied {
+  filter: invert(0.8);
+}

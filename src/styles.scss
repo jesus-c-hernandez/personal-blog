@@ -90,6 +90,16 @@ h6 {
   max-width: 400px;
 }
 
+// ===== Margin =====
+.m-0 {
+  margin: 0;
+}
+.m-auto {
+  margin: auto;
+}
+
+// ===== / Margin =====
+
 // ===== Margin-Top =====
 .mt-120 {
   margin-top: 120px;
@@ -109,13 +119,17 @@ h6 {
 .mt-20 {
   margin-top: 20px;
 }
-.m-0 {
-  margin: 0;
-}
-.m-auto {
-  margin: auto;
-}
 // ===== / Margin-Top =====
+
+// ===== Margin-Bottom =====
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+// ===== / Margin-Bottom =====
 
 
 // ===== Flexbox =====
@@ -171,6 +185,13 @@ h6 {
   flex-direction: column;
 }
 // ===== / Flexbox =====
+
+// ===== Gap =====
+.gap-40 {
+  gap: 40px;
+}
+// ===== / Gap =====
+
 
 // Buttons
 .btn-principal {

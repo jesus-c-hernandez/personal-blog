@@ -4,11 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 // Modules
 import { ComponentsModule } from './components/components.module';
+import { CoreModule } from './core/core.module';
+import { SharedModule } from './shared/shared.module';
 
 // Angular Material
+
 
 @NgModule({
   declarations: [
@@ -18,8 +22,11 @@ import { ComponentsModule } from './components/components.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     // Modules
     ComponentsModule,
+    CoreModule,
+    SharedModule
     // Angular Material
   ],
   providers: [],

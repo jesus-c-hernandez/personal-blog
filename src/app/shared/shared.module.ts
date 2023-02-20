@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ItemProjectComponent } from './item-project.component';
 import { RouterModule } from '@angular/router';
+import { ItemProjectComponent } from './item-project/item-project.component';
 
 
 
@@ -11,6 +11,6 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     RouterModule
   ],
-  exports: [ItemProjectComponent]
+  exports: [ItemProjectComponent, ]
 })
 export class SharedModule { }

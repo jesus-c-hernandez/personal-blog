@@ -1,0 +1,35 @@
+<div id="about-me">
+  <div>
+    <h3 class="gray-900">Sobre mi</h3>
+  </div>
+  <div class="mt-20">
+    <div class="jc-c">
+      <h4 class="h4">
+        Habilidades tecnicas
+      </h4>
+    </div>
+    <div class="content-tech-skill">
+      <div class="lobby-elements al-i-al-cont jc-around" *ngFor="let techSkill of techSkills$ | async; index as i">
+        <img class="img-tech-skill" src="{{techSkill.img}}" alt="">
+        <h6 class="h6">
+          {{ techSkill.name }}
+        </h6>
+      </div>
+    </div>
+  </div>
+  <div class="mt-40">
+    <div class="jc-c">
+      <h5 class="h5">
+        Aprendiendo
+      </h5>
+    </div>
+    <div class="content-tech-skill content-learn-tech-skill">
+      <div class="lobby-elements al-i-al-cont jc-around" *ngFor="let learnTechSkill of learnTechSkills$ | async; index as i">
+        <img class="img-tech-skill" src="{{learnTechSkill.img}}" alt="">
+        <h6 class="h6">
+          {{ learnTechSkill.name }}
+        </h6>
+      </div>
+    </div>
+  </div>
+</div>
