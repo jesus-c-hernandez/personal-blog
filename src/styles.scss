@@ -8,6 +8,7 @@ $color-5: #2d2d29;
 html,
 body {
   height: 100%;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
@@ -208,7 +209,6 @@ h6 {
   outline: 0;
   padding: 10px 25px;
   text-align: center;
-  transform: translateY(0);
   transition: transform 150ms, box-shadow 150ms;
   user-select: none;
   -webkit-user-select: none;

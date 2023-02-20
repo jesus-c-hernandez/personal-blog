@@ -9,7 +9,6 @@ import { HttpClientModule } from '@angular/common/http';
 // Modules
 import { ComponentsModule } from './components/components.module';
 import { CoreModule } from './core/core.module';
-import { SharedModule } from './shared/shared.module';
 
 // Angular Material
 
@@ -26,7 +25,6 @@ import { SharedModule } from './shared/shared.module';
     // Modules
     ComponentsModule,
     CoreModule,
-    SharedModule
     // Angular Material
   ],
   providers: [],

@@ -32,5 +32,39 @@
     ],
     "repoProject": "https://github.com/jesus-c-hernandez/pokemon-store",
     "project": "https://poke-store-vxt6.onrender.com/#/"
+  },
+  {
+    "name": "PokeShopee",
+    "description": "Tienda de pokemon's. Cuenta con filtros por nombre y tipo, apartado de descripcion del producto, carrito de compras e incluye cuentas de usuario.",
+    "technologies": [
+      {
+        "name": "Vue",
+        "img": "../../../assets/technologies/vue.png"
+      },
+      {
+        "name": "Node js",
+        "img": "../../../assets/technologies/node-js.png"
+      },
+      {
+        "name": "Mongo DB",
+        "img": "../../../assets/technologies/mongo.png"
+      }
+    ],
+    "colaborators": [
+      {
+        "name": "Daniel Cruz",
+        "profile": "https://github.com/j-daniel-cruz-b"
+      },
+      {
+        "name": "Carolina Medina",
+        "profile": "https://github.com/CarolinaMedina00"
+      },
+      {
+        "name": "Jesús Hdez",
+        "profile": "https://github.com/jesus-c-hernandez"
+      }
+    ],
+    "repoProject": "https://github.com/jesus-c-hernandez/pokemon-store",
+    "project": "https://poke-store-vxt6.onrender.com/#/"
   }
 ]

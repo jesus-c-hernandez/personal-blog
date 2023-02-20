@@ -2,7 +2,7 @@
   <div class="card" *ngFor="let project of projects$ | async; index as i">
     <h4 class="card-title gray-900 m-0">{{project.name}}</h4>
     <img class="card-img" src="../../../assets/projects/PokeShopee.jpg" alt="">
-    <div class="card-desc">
+    <!-- <div class="card-desc">
       <p>{{project.description}}</p>
       <div>
         <h5 class="subtitle1">
@@ -32,7 +32,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="jc-sb mt-20">
       <div>
         <button class="btn-gen-item-proj btn-repo jc-around al-i-ce" (click)="openNewWindow(project.repoProject)">
@@ -47,7 +47,7 @@
           <h6 class="m-auto body2 gray-100">
             Visitar
           </h6>
-          <img class="img-icon" src="../../../assets/icons/application.png" alt="">
+          <img class="img-icon" src="../../../assets/icons/app-white.png" alt="">
         </button>
       </div>
     </div>

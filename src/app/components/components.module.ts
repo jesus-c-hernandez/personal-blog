@@ -1,24 +1,21 @@
 // Modules
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SharedModule } from '../shared/shared.module';
+import { PagesModule } from './home/pages/pages.module';
 
 // Components
-import { HeaderComponent } from './header/header.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { AboutMeComponent } from './about-me/about-me.component';
-import { ContactComponent } from './contact/contact.component';
+import { HomeComponent } from './home/home.component';
 
 // Material
 
 
 @NgModule({
-  declarations: [HeaderComponent, ProjectsComponent, AboutMeComponent, ContactComponent],
+  declarations: [HomeComponent],
   imports: [
     CommonModule,
-    SharedModule,
+    PagesModule,
     // Material
   ],
-  exports: [HeaderComponent, ProjectsComponent, AboutMeComponent, ContactComponent],
+  exports: [HomeComponent],
 })
 export class ComponentsModule {}

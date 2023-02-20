@@ -1,0 +1,42 @@
+#home {
+  position: relative;
+  z-index: 100;
+}
+
+.home-nav{
+  background-image: url("../../../assets/cover-img/cover-image01.png");
+  position: fixed;
+  top:0;
+  right:0;
+  width: 100%;
+}
+
+.nav-align {
+  justify-content: end;
+}
+
+.sub-line {
+  position: relative;
+  display: block;
+  padding: 5px;
+}
+
+.sub-line::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #2d2d29;
+  z-index: 1;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-in-out;
+  transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
+}
+
+.sub-line:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
